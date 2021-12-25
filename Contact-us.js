@@ -30,7 +30,7 @@ function validateForm(){
        errorFlag = true;
    }
    if(!errorFlag){
-       success.innerText = "Thank you for contacting us !";
+       window.location.href="Received.html";
    }
 }
 
