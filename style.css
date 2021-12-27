@@ -7,15 +7,21 @@
     zoom: 1.0;
 }
 body{
-    background:#faf4ee;
-    font-family:Calisto MT ;
+    background:#fff;
+    /*background:#faf4ee;
+   font-family:Calisto MT*/ ;
+    
+    
 }
+
 
            /*NAV*/
 * {
  margin: 0;
  padding: 0;
     box-sizing: border-box;
+   
+    
  
 }
 
@@ -29,12 +35,11 @@ li {
 }
 /* LOGO */
 .logo {
-    font-family: Candara;
+    font-family: calibri;
     font-size: 20px;
 }
 
 .navbar {
-   
     transition: 0.6s;
     top: 0;
     left: 0;
@@ -44,15 +49,19 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-   background: rgba(250, 244, 238,0.8);
+   background: rgba(255, 243, 230, 0.8);
     color: #ed8100;
-    height: 75px;
+    height: 73px;
     z-index: 100;
 }
 
 .nav-links a {
- font-family: Candara;
+ 
  color: #3c3c3c;
+    font-family: Calibri Light;
+    text-transform: uppercase;
+   
+    
 }
 
 
@@ -138,7 +147,7 @@ a:hover{
     
 }
 .th1{
-    font-family:Verdana; 
+    font-family:calibri;
     font-weight: 550; 
     text-align: center; 
     font-size: 15px;
@@ -148,64 +157,100 @@ h2{
     font-size: 30px;
     text-align: center;
     margin-top:5%;
-    color: #ed8100;
+    color: #cc5500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-family: Calibri Light;
     
 }
 .table2{
+    margin-top: 2%;
     text-align:center;
+    margin-left: 5px;
     
     
 }
-
+.tableabot{
+    text-align:center;
+    margin-left: 5px;
+    
+}
 p{
-    text-align: justify;
-    font-family: Garamond, sans-serif; 
-    font-size: 20px; 
-    font-weight: 550 ; 
-    color: #505050;
+    padding-left: 2%;
+    padding-right: 35px;
+    text-align: left;
+    font-family: Corbel;
+    font-size: 22px; 
+    font-weight: 520 ; 
+    color: #2e2b29; 
+    
 }
 
 .table3{
      left:80%;
 }
 .p1{
-    font-family:  sans-serif; 
-    font-size: 11px; 
-    font-weight: 400 ; 
-    color: black;
+    padding-left: 25px;
+    font-family:  calibri;
+    font-size: 10px; 
+    font-weight: 300 ; 
+    color: white;
 }
 h4{
-   
+   font-family: Calibri Light;
     text-align: center; 
-    color: #ed8100;
+    color: #ff9c36;
+    margin-bottom: 10px;
 }
 ul{
     list-style-type: none; 
     text-align:match-parent; 
-    color: #555555 ;
-    font-family: Candara;
+   
+    font-family: calibri;
 }
 li{
     list-style-type: none;
+     text-align: left;
+    font-family: Corbel;
+    text-transform:capitalize;
+  
+    
+}
+
+.afooter{
+      color: white;
 }
 
 h1{
+    color: #cc5500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-family: Calibri Light;
     font-size: 30px;
     text-align: center; 
-    color: #ed8100;
+    
 }
 
 .p2{
+    padding: 20px;
     text-align:left;
-    font-family: Raleway, sans-serif;  
-    font-size: 15px; 
+    font-family: calibri;  
+    font-size: 17px; 
     font-weight: 550 ; 
     color: #505050;
 }
 caption{
+     color: #cc5500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-family: Calibri Light;
     text-align: center; 
-    color: #a05c0a ; 
-    font-size: 30px;
+    
+    font-size: 28px;
+    
 }
 
      /*IMAGES*/
@@ -230,8 +275,8 @@ caption{
     background: rgba(0,0,0,0.1);
     color: #F5F5F5	;
      text-shadow: 2px 2px 8px #000000;
-    font-family: Candara, sans-serif; 
-    font-size: 13px; 
+    font-family: Calibri Light; 
+    font-size: 14px; 
     font-weight: 550 ;  
     text-align: center;
     display: flex;
@@ -263,17 +308,49 @@ caption{
     
 }
 
+/*SCROLL BAR*/
+
+::-webkit-scrollbar{
+   width:0;
+    background:transparent;
+   
+    
+}
+#progressBarContainer{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+#progressBar{
+   position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    background: linear-gradient(to top, #c4a484,#ffffff);
+    height: 0;
+    opacity: 0;
+   
+}     
+
+
       /*FOOTER*/
 
 footer{
-    background:#e6d7c5;
+    background:#343434;
+}
+.fas{
+    color: white;
+   width: 50%;
 }
                       /*SOCIAL MEDIA ICONS*/
                 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 #icone{
-    
+    color: white;
     display: inline-block;
     height: 50%;
     width: 50%;
@@ -281,7 +358,7 @@ footer{
      margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
+    font-family: calibri;
 }
 .wrapper .button{
    
@@ -292,7 +369,7 @@ footer{
     
     margin: 0 2px;
     overflow: hidden;
-    background:linear-gradient(to bottom,#e6d7c5,#FFFFFF);
+    background:#343434;
     border-radius:50px;
     cursor: pointer;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
@@ -365,11 +442,11 @@ footer{
     padding: 0 32px;
     box-shadow: 0 -2px 16px #2f3640;
     transition: 400ms;
-    font-family: sans-serif;
+    font-family: calibri;
 }
 
 .cookie-container p{
-    font-family: Garamond;
+    font-family: calibri;
     font-size: 18px;
     
 }

@@ -7,11 +7,14 @@
         <meta name="description" content="artisanat marocain,maison d'artisanat, tradition et art, produits artisanals marocain,histoire d'artisanat marocain,cuir,tapis,poterie,luminaires,vêtements marocain,cosmétiques bio"/>
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="shortcut icon" type="image/x-icon" href="output-onlinepngtools.png"/>
+        <script src="https://kit.fontawesome.com/07b7eab3d1.js" crossorigin="anonymous"></script>
         
          
     </head>
     <body >
-
+<div id="progressBar"></div> 
+<div id="progressBarContainer"></div>
                                     <!-- MENU -->
         
  <nav class="navbar">
@@ -126,46 +129,78 @@
     <!-- FOOTER --> 
     
     
-    <footer>
-        <table cellpadding ="80%" cellspacing="0%">
+   <footer>
+        <table width =100%;>
             <tr>
-              <th>
+              <th style="width: 30%;">
                         <!-- LOGO -->
                   
-                  <img src="output-onlinepngtools.png" width=200px height=200px>
-                  <p class="p1">© 2021 artisanat . All rights reserved</p>
+                  <img style="margin-left: -30%;" src="output-onlinepngtools.png" width=200px height=200px>
+                  <p class="p1" style="margin-left: 10%">© 2021 artisanat . All rights reserved</p>
               </th>
-              <th style="padding-left: 250px">
+                
+                
+              <th style="width: 40%;">
                         <!-- MENU -->
                   
-                  <h4> Nos Produits</h4>
-                  <ul>
-                    <li style=" text-decoration: none;"> 
-                       <a href="Cuir.html">Cuir</a>
+                  <h4 style="margin-left: -30%;"> Nos Produits</h4>
+                  <ul style="margin-left: 30%;">
+                    <li> 
+                       <a href="Cuir.html" class="afooter">Cuir</a>
                     </li>
                     <li > 
-                       <a href="Tapis.html">Tapis</a>
+                       <a href="Tapis.html" class="afooter">Tapis</a>
                     </li>
                     <li> 
-                       <a href="Poterie.html">Poterie</a>
+                       <a href="Poterie.html" class="afooter">Poterie</a>
                     </li>
                     <li > 
-                       <a href="Luminaires.html">Luminaires</a>
+                       <a href="Luminaires.html" class="afooter">Luminaires</a>
                     </li>
                     <li> 
-                       <a href="Vêtements Marocain.html">Vêtements Marocain </a>
+                       <a href="Vêtements Marocain.html"class="afooter">Vêtements Marocain </a>
                     </li>
                     <li > 
-                       <a href="Cosmétiques Bio.html">Cosmétique Bio</a>
+                       <a href="Cosmétiques Bio.html" class="afooter">Cosmétique Bio</a>
                     </li>
                    </ul>
                 
              </th>
                 
-             <th style="padding-left: 250px; padding-top: 40px;">
-                         <h4>Find US</h4>
+             <th  style="width: 35%; ">
+                        <br>
+                        <br>
+                      
+                        
+               <ul>
+                 <li>
+                   <span class="fas fa-map-marked-alt" style=" display: table-cell; ">
+                     
+                   
+                  &nbsp;	&nbsp;	<span style="    font-family: Calibri Light; text-transform: capitalize;vertical-align: top;font-weight: normal;font-size: large;"> 203 fake st. marrakech,medina, morocco</span>
+                     </span>
+                </li><br>
+                   
+                  <li>
+                      <span class="fas fa-phone-square-alt" style=" display: table-cell; ">
+                     
+                   
+                  &nbsp;	&nbsp;	<span style="    font-family: Calibri Light; text-transform: capitalize;vertical-align: top;font-weight: normal;font-size: large;"> +212 524 329 201</span>
+                     </span>
+                   
+                </li><br>
+                  <li>
+                      <span class="fas fa-envelope-open-text"  style=" display: table-cell; ">
+                     
+                   
+                  &nbsp;	&nbsp;	<span style="    font-family: Calibri Light; text-transform: capitalize;vertical-align: top;font-weight: normal;font-size: large;">infos@artisanat.com</span>
+                     </span>
+                      
+                      
+                </li>
                  
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1698.647373711073!2d-7.989926841980632!3d31.62577927921229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee43ad1cec7d%3A0x91b033ce5d01bbb1!2sJemaa%20el-Fna%2C%20Marrakesh%2040000!5e0!3m2!1sen!2sma!4v1639415511147!5m2!1sen!2sma" width="350" height="210" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </ul>  
+   
             </th>
         </tr>
         <tr>
@@ -176,7 +211,7 @@
     </table>
                <!-- SOCIAL MEDIA -->
         
-    <div class="wrapper" id="icone" style="align-items: center; margin-left:35%;" >
+    <div class="wrapper" id="icone" style="align-items: center; margin-left:40%;  margin-bottom: 2%; "  >
       <div class="button">
          <div class="icon">
             <i class="fab fa-facebook-f"></i>
@@ -194,14 +229,21 @@
       <div class="button">
          <div class="icon">
             <i class="fab fa-instagram"></i>
+             
          </div>
          <span>Instagram</span>
       </div>
 
      
-      </div>
-        <script src="script.js"></script>
+      </div> 
     </footer>
-
+ <script>let progressBar = document.querySelector("#progressBar");
+let totalPageHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = () => {
+    let newProgressHeight = (window.pageYOffset / totalPageHeight) * 100;
+    progressBar.style.height = `${newProgressHeight}%`;
+     progressBar.style.opacity = `${newProgressHeight}%`;
+}</script>
         
 </body>
+</html>
