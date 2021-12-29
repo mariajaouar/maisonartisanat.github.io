@@ -52,6 +52,6 @@ function emailIsValid(email){
 }
 //Check if name is valid
 function nameIsValid(nameInput){
-    let pattern = /^[A-Za-z]+$/;
+    let pattern = /^[A-Za-z\s]+$/;
     return pattern.test(nameInput);
 }
