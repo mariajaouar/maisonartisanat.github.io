@@ -8,11 +8,11 @@ const errorNodes = document.querySelectorAll(".error");
 //Validate data
 
 function validateForm(){
-    
+     
     clearMessages();
     let errorFlag = false;
     
-   if(nameInput.value.length < 1){
+   if(!nameIsValid(nameInput.value)){
        errorNodes[0].innerText = "Name cannot be blank";
        nameInput.classList.add("error-border");
        errorFlag = true;
@@ -49,4 +49,9 @@ function clearMessages(){
 function emailIsValid(email){
     let pattern = /\S+@\S+\.\S+/;
     return pattern.test(email);
+}
+//Check if name is valid
+function nameIsValid(nameInput){
+    let pattern = /^[A-Za-z]+$/;
+    return pattern.test(nameInput);
 }
